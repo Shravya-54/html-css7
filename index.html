@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<!-- saved from url=(0021)file:///D:/index.html -->
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title></title>
+    <style>
+       
+            * {
+                padding: 0;
+                margin: 0;
+            }
+       
+            .help {
+                background-color: purple;
+                color: white;
+            }
+
+                .help h4 {
+                    margin-left: 10%;
+                    font: cabin;
+                    font-weight: 400;
+                    font-size: 18px;
+                }
+
+            .head1 {
+                margin-left: 10%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            .i1 {
+                width: 79px;
+                height: 35px;
+                gap: 0px;
+                margin-top: 5%;
+            }
+
+            .list1 {
+                font-weight: 100;
+                font-size: 18px;
+            }
+
+            .cn-btn {
+                background-color: #ffc107;
+                color: white;
+                border: none;
+                margin-right: 200px;
+                font-size: 10px;
+                cursor: pointer;
+                border-radius: 4px;
+                height: 30px;
+                width: 100px;
+            }
+
+            .donate {
+                display: flex;
+                justify-content: space-between;
+                position:relative;
+            }
+
+            .i2 {
+                height: 300px;
+            }
+
+            .i4 {
+                height: 300px;
+            }
+
+            .f-txt h1 {
+                font-size: 36px;
+                color: purple;
+            }
+
+            .f-txt h4 {
+                font-size: 20px;
+                line-height: 75px;
+            }
+
+            .f-txt h5 {
+                font-size: 15px;
+            }
+
+            .c-img {
+                position: absolute;
+                right: 10%;
+                top: 20%;
+            }
+
+            .one {
+                position: absolute;
+                left: 10%;
+                top: 15%;
+            }
+
+            .dn-btn {
+                background-color: #ffc107;
+                color: white;
+                border: none;
+                font-size: 12px;
+                cursor: pointer;
+                margin-top: 12%;
+                height: 35px;
+                width: 100px
+            }
+
+        .our1 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+           
+        }
+
+        .vis-section {
+            background-color: purple;
+            color: white;
+            text-align: center;
+            height:150px;
+            
+        }
+
+            .vis-section h2 {
+                font-size: 28px;
+                margin-top: 1%;
+            }
+        .vis-card1 {
+            display: flex;
+            justify-content: center;
+           gap:15px;
+           margin-top:1%;
+        }
+
+        
+        .card1 {
+            background-color: #ffffff;
+            color: purple;
+            border-radius: 5px;
+            flex: 1;
+            height:180px;
+            width:200px;
+            max-height: 230px;
+            max-width: 260px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0,2);
+            
+        }
+
+
+            .card1 img {
+                display: block; /* Make the image a block element to allow margin */
+                margin: 0 auto 10px; /* Center the image and add bottom margin */
+                vertical-align: middle;
+            }
+
+            .card1 p {
+               margin-top:10%;
+               
+            }
+        .hand-img {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 150px;
+            margin-left:130px;
+            flex-wrap:wrap;
+            max-width:1100px;
+            width:100%;
+        }
+        @media(max-width:1000px) {
+            .hand-img {
+                
+                margin-top: 20%;
+            }
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 50px;
+            width: 100%;
+        }
+
+        .image-container {
+            flex: 1;
+            position: relative; /* For positioning the logo */
+            flex-wrap: wrap;
+            display: flex;
+            flex-direction: column; /* Stack the image and logo-container vertically */
+            background-color: white;
+            
+            margin-bottom: 10%;
+        }
+            .image-container image {
+                width: 100%; /* Adjust as needed */
+                height: auto; /* Adjust as needed */
+            }
+
+
+
+        .text-container {
+            align-self: flex-start;
+            flex: 1;
+            display: flex;
+            flex-direction: column; /* Stack text and the logo below it */
+            width: 100%;
+        }
+       
+        .text-container h2{
+            font-size:2rem;
+            line-height:5rem;
+            font:cabin;
+            color:purple;
+            
+        }
+            .text-container h5 {
+                
+                margin-top: 5%;
+            }
+
+        .bu {
+            display: inline-block;
+            background-color: orange;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            height: 40px;
+            width: 100px;
+            border: none;
+            margin-top: 10%;
+            text-align: center;
+            line-height: 40px;
+        }
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: center; /* Stack items vertically on smaller screens */
+                gap: 30px;
+            }
+
+            .text-container {
+                text-align: center;
+            }
+
+            .image-container {
+                flex: none; /* Ensure the image doesn't take too much space on smaller screens */
+                width: 100%;
+            }
+        }
+
+
+
+        .logo-container {
+            display: flex;
+            position: relative;
+        }
+
+        .logo {
+            position: relative;
+            bottom: 10%;
+        }
+
+        .logo1 {
+            position: absolute;
+            top: 90%;
+            left: 90%;
+            transform: translate(-50%, -50%);
+        }
+
+        .logo2 {
+            position: relative;
+            bottom: 30%;
+            left: 20%;
+        }
+
+        .logo3 {
+            margin-top: -150px; /* Space between the button and the logo3 */
+            max-width: 100%; /* Ensure logo3 scales properly */
+            position: relative; /* Make logo3 position relative to text-container */
+            align-self: center; /* Align the logo3 to the center horizontally */
+            height: auto; /* Keep aspect ratio intact */
+            width: auto;
+            left:20%;
+        }
+
+        .Health {
+            background-color: rgb(247, 242, 242);
+           
+            max-height:500px;
+            height:1000px;
+        }
+
+        .our2 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap; /* Allow wrapping */
+            max-width: 1100px;
+            margin: 0 auto;
+           
+        }
+
+        .pro {
+            margin-top: 30px;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+        .pro h3{
+            font:cabin;
+            font-size:30px;
+        }
+        .button1 {
+            display: flex;
+            justify-content: center; /* Center buttons */
+            gap: 1rem; /* Space between buttons */
+            
+        }
+
+        .left, .right {
+            background-color: purple;
+            color: white;
+            border: none;
+            cursor: pointer;
+            height:30px;
+            width:30px;
+            font-weight:bold;
+        }
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            width: 250%;
+            max-width: 1100px;
+            margin: 25px auto;
+        }
+
+        .card {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            background-color: #fff;
+            max-height: 100%;
+           height:300px;
+           
+           
+        }
+
+        .card-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start; 
+            margin-left: 20px;
+        }
+
+        .card:nth-child(2) { /* Target the 2nd card directly */
+            display: flex;
+            flex-direction: row; /* Horizontal layout for 2nd card */
+            align-items: flex-start; /* Align to top */
+        }
+
+            .card:nth-child(2) .card-content {
+                flex: 1; /* Takes up available space */
+                flex-direction: column;
+            }
+
+            .card:nth-child(2) .colored-column {
+                width: 20px; /* Fixed width of 40px */
+                height: 100%;
+                background-color: purple; /* Replace with your color code */
+            }
+
+        .card img {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 50px;
+            margin-left: 20px; 
+        }
+
+        .card h2 {
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+
+        .card p {
+            font-size: 14px;
+            margin-bottom: 20px;
+            color: #666;
+            line-height: 1.4;
+            white-space: pre-wrap; /* Preserve line breaks */
+        }
+        .card .button-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top:20px;
+        }
+        .card .button-container .b1 {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+            
+        }
+        .card button {
+            background-color: #ffc107;
+            border: none;
+            border-radius: 5px;
+            height: 40px;
+            width: 120px;
+            color: white;
+            margin-left: 5%;
+            margin-bottom: 20px; /* Push button to the bottom */
+            margin-top: auto;
+            text-align: center;
+            display: flex; /* Use flexbox to center text vertically */
+            justify-content: center; /* Center the text horizontally */
+            align-items:center;
+        }
+       
+        
+        .container1 {
+            text-align: center;
+            
+            margin-top: 5%;
+            position: absolute;
+            top: 200%;
+            left: 20%;
+        }
+        .hero {
+            text-align: center;
+            flex-grow: 1;
+            margin: 0;
+        }
+            .hero h2 {
+                font: cabin;
+                font-size: 30px;
+                left: 40%;
+                color: #6b3080;
+                position: absolute;
+                top: 250%;
+            }
+        .blue1 {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            margin: 0;
+        }
+        .help-steps {
+            display: flex;
+            justify-content: center; /* Center all steps horizontally */
+            align-items: center; /* Align them vertically */
+            flex-wrap: wrap; /* Ensures responsiveness */
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        .step {
+           
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+           
+           
+        }
+        @media (max-width: 768px) {
+            .help-steps {
+                flex-direction: column; /* Stack steps on smaller screens */
+            }
+        }
+
+        .footer {
+            background-color: purple;
+            color: white;
+            height: 400px;
+        }
+
+        .line2 {
+           
+            display: flex;
+            background-color: purple;
+            align-content: center;
+            
+            max-width: 1000px;
+            margin: 0 auto;
+            font:cabin;
+            font-size:20px;
+            
+        }
+
+        nav ol {
+            list-style-type: none;
+            display: flex;
+            color: white;
+            justify-items: center;
+            gap: 20px;
+            justify-content: flex-start;
+        }
+
+        nav li {
+            justify-content: space-between;
+            font-size: 12px;
+            white-space: nowrap;
+        }
+
+        .line2 > div {
+            display: flex;
+            align-items: center; /* Ensures images stay aligned properly */
+        }
+        .white {
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            background-color: white;
+            height: 100px;
+            width:1500px;
+            max-width: 1000px;
+            align-items: center;
+        }
+
+        .white1 {
+            align-items: center;
+            justify-content: space-between;
+        }
+
+            .white1 h6 {
+                font-size: 20px;
+                color: purple
+            }
+
+        .lastdiv {
+            display: flex;
+            margin: 0 auto;
+            display: flex;
+            background-color: white;
+            height: 200px;
+            max-width: 1000px;
+            background-color: rgb(167, 37, 167);
+        }
+
+        .mobile {
+            margin: 0 auto;
+            align-content: center;
+        }
+
+        .copy {
+            display: flex;
+            max-width: 1000px;
+            margin: 0 auto;
+            justify-content: space-between;
+        }
+
+        .cpy {
+            font-size: 12px;
+        }
+
+        .line3 {
+            align-content: center;
+        }
+
+        .contactus {
+            background-color: #ffc107;
+            color: white;
+            border: none;
+            height:30px;
+            width:80px;
+            font-size: 15px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-right:85%;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="help">
+        <h4>Helpline:8050636777</h4>
+    </div>
+
+    <section class="head1">
+        <div>
+            <img src="./index_files/Group 46.png" class="i1">
+        </div>
+
+
+        <div class="list1">Home</div>
+        <div class="list1">About Us</div>
+        <div class="list1">Health Support Program </div>
+        <div class="list1">Get involved</div>
+        <div class="list1">Contact Us</div>
+
+
+        <div>
+            <button class="cn-btn">Contact Us</button>
+        </div>
+    </section>
+
+    <main>
+        <section class="donate">
+            <img src="./index_files/Group 57.png" class="i2">
+            <div class="one">
+                <div class="f-txt">
+
+                    <h1>Sanjeevini Cancer Seva Trust</h1>
+                    <h4>With You in Every Step Of Cancer Care</h4>
+                    <h5>Donate Now to Help People with Cancer</h5>
+                    <button class="dn-btn">Donate Now</button>
+                </div>
+
+            </div>
+            <div class="c-img"> <img src="./index_files/Group 52.png" height="200" width="300"></div>
+            <img src="./index_files/Group 58.png" class="i4">
+        </section>
+
+
+        <section class="vis-section">
+            <div class="our1">
+                <img src="./index_files/Line 2.png" class="l1">
+                <img src="./index_files/Group 14.png" height="40">
+                <h2>Our Vision</h2>
+                <img src="./index_files/Group 14.png" height="40">
+                <img src="./index_files/Line 2.png" class="l1">
+            </div>
+
+
+            <div class="vis-card1">
+                <div class="card1">
+                    <p><img src="./index_files/Frame.png"></p>
+                    <p> Support people with<br> Cancer</p>
+                </div>
+                <div class="card1">
+                    <p><img src="./index_files/Frame (1).png"> </p>
+                    <p>Provide financial asssistance<br> in Cancer Diagnostic &amp; Treatment</p>
+                </div>
+
+                <div class="card1">
+                    <p><img src="./index_files/Frame (2).png"></p>
+                    <p>Conduct Educational<br> Workshop</p>
+                </div>
+                <div class="card1">
+                    <p><img src="./index_files/Frame (3).png"></p>
+                    <p>Increased Community Outreach to Create Cancer <br>Awareness</p>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <section class="hand-img">
+            <div class="container">
+                <div class="image-container">
+                    <img src="./index_files/image.png" alt="Image" class="image">
+                    <div class="logo-container">
+                        <img src="./index_files/Group 54.png" alt="Logo" class="logo" height="40">
+                        <img src="./index_files/Sanjeevini.png" class="logo2" height="30">
+                    </div>
+                    <img src="./index_files/Group 53.png" alt="Logo" class="logo1" width="80">
+                    
+                </div>
+                <div class="text-container">
+                    <h2>Our Mission</h2>
+                    <h4 style="font-weight:bold;">At Sanjeevini Cancer Seva Trust, we are devoted to providing compassionate <br>care and essential support for cancer patients.</h4>
+                    <h5>We strive to offer both practical assistance and emotional comfort, ensuring that those in<br> need receive the help and resources necessary during this challenging time.</h5>
+                    <button class="bu">Read More</button>
+                    <img src="./index_files/image 4.png" alt="Image" class="logo3" height="200" width="180">
+                </div>
+            </div>
+            
+        </section>
+
+
+        <section class="Health">
+            <div class="our2">
+                <div class="pro">
+                    <img src="./index_files/Group 14.png">
+                    <h3><span style="color:#6b3080">Our</span> Health Support Program</h3>
+                </div>
+
+                <div class="button1">
+                    <button class="left">&lt;</button>
+                    <button class="right">&gt;</button>
+                </div>
+            </div>
+
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-content">
+                        <img src="./index_files/Group 59.png" alt="Icon 1">
+                        <h2>Aasare</h2>
+                        <p>Donation of ₹1 per day (₹365 rs per day)<br>entitled for the support of cancer care up to<br>₹3 lacs per year for 1 person</p>
+                        <div class="button-container"><button>View Details</button></div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-content">
+                        <img src="./index_files/Group 59 (1).png" alt="Icon 2">
+                        <h2>Abhaya</h2>
+                        <p>Donation of ₹5 per day (₹1825 rs per day)<br>entitled for the support of cancer care up to<br>₹10 lacs per year for 1 person</p>
+                       <div class="button-container"><button>View Details</button></div> 
+                    </div>
+                    <div class="colored-column"></div>
+                </div>
+
+                <div class="card">
+                    <div class="card-content">
+                        <img src="./index_files/Group.png" alt="Icon 3">
+                        <h2>Donate any amount</h2>
+                        <p>support of people with cancer</p>
+                      <div class="button-container"><button class="b1">Donate Now</button></div>  
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="blue1">
+            <img src="./index_files/Group 96.png" height="400" class="i5 left-img">
+            <div class="hero">
+                <h2>How We Can Help</h2>
+
+                <section class="how-we-can-help">
+                    <div class="container">
+
+                        <div class="help-steps">
+                            <div class="step">
+                                <img src="./index_files/Group 89.png" alt="Step 1" height="250" width="250">
+                                <img src="./index_files/Vector 1.png" style="margin-top:-75px">
+
+                            </div>
+                            <div class="step">
+                                <img src="./index_files/Group 85.png" alt="Step 2" height="250" width="250">
+                                <img src="./index_files/Vector 1.png" style="margin-top:-75px;">
+                            </div>
+                            <div class="step">
+                                <img src="./index_files/Group 86.png" alt="Step 3" height="250" width="250">
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </section>
+            </div>
+            <img src="./index_files/Group 95.png" height="400" class="i5 right-img">
+        </div>
+
+        <section class="footer">
+            <footer class="li">
+                <div class="line2">
+                    <div><img src="./index_files/Group 111.png"></div>
+                    <div class="line3">
+                        <nav>
+                            <ol>
+
+                                <li>Home</li>
+
+                                <li>About Us</li>
+                                <li>Health Support Program </li>
+                                <li>Get Involved</li>
+                                <li>Contact Us</li>
+                            </ol>
+                        </nav>
+                    </div>
+                    <div><img src="./index_files/Group 110.png"></div>
+
+                </div>
+
+                <section class="box">
+                    <div class="white">
+                        <div class="white1">
+                            <img src="./index_files/Group 46.png">
+                        </div>
+                        <div class="white1"> <img src="./index_files/Line 6.png">height="50"&gt;</div>
+                        <div class="white1">
+                            <h6 font="" size="1">With You in Every step Of Cancer Care</h6>
+                        </div>
+                        <div class="white1"> <img src="./index_files/Line 6.png"> height="50"&gt;</div>
+                        <div class="white1"><button class="contactus">Contact Us</button> </div>
+                    </div>
+
+
+                    <div class="lastdiv">
+                        <div class="mobile">
+                            <img src="./index_files/edgesensor_high.png">
+                            <h5>8050636777</h5>
+                        </div>
+                        <div class="mobile"> <img src="./index_files/Line 6.png" height="100"></div>
+
+                        <div class="mobile">
+                            <img src="./index_files/attach_email.png">
+                            <h5>sanjeevinicancerseva@gmail.com</h5>
+                        </div>
+                        <div class="mobile"> <img src="./index_files/Line 6.png" height="100"></div>
+
+                        <div class="mobile">
+                            <img src="./index_files/distance.png">
+                            <h5>Mangalore Institute of Oncology<br>Pumpwell, Mangaluru<br>Dakshina Kannada<br>575002</h5>
+                        </div>
+                    </div>
+                </section>
+                <div class="copy">
+                    <div class="cpy">Designed &amp; Developed by Chipsy it Services Pvt. Ltd.</div>
+                    <div class="cpy">Copyright: © 2024 Sanjeevini Cancer Care Trust</div>
+                </div>
+            </footer>
+        </section>
+      
+
+    </main>
+
+</body></html>
